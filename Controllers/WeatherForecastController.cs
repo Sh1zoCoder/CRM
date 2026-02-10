@@ -22,5 +22,12 @@ namespace CRM.Controllers
             })
             .ToArray();
         }
+
+        [HttpPost("hello")]
+        public IActionResult Post()
+        {
+        return Ok("Hello from API");
+        }
+
     }
 }
