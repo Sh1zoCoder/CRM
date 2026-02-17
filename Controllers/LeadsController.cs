@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using CRM.DTO;
 using CRM.Models;
 using CRM.Storage;
@@ -10,10 +11,11 @@ namespace JsonFileApi.Controllers;
 public class LeadsController : ControllerBase
 {
     private readonly JsonFileLeadStore _store;
-
-    public LeadsController(JsonFileLeadStore store)
+    private readonly ILogger<LeadsController> _logger;
+    public LeadsController(JsonFileLeadStore store, ILogger<LeadsController> logger)
     {
         _store = store;
+        _logger = logger;
     }
 
     // GET /api/leads?status=New&query=ivan
@@ -41,7 +43,7 @@ public class LeadsController : ControllerBase
     public IActionResult Create([FromBody] CreateLeadRequest request)
     {
         // JSON -> C# (десериализация тела запроса)
-        var lead = new Lead
+        Lead lead = new Lead
         {
             Name = request.Name.Trim(),
             Phone = request.Phone.Trim(),

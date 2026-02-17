@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Documents\\crm\\CRM\\CRM\\CRM.csproj": {}
+    "C:\\Users\\user\\Documents\\crm\\crm\\crm\\CRM.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Documents\\crm\\CRM\\CRM\\CRM.csproj": {
+    "C:\\Users\\user\\Documents\\crm\\crm\\crm\\CRM.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Documents\\crm\\CRM\\CRM\\CRM.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Documents\\crm\\crm\\crm\\CRM.csproj",
         "projectName": "CRM",
-        "projectPath": "C:\\Users\\user\\Documents\\crm\\CRM\\CRM\\CRM.csproj",
+        "projectPath": "C:\\Users\\user\\Documents\\crm\\crm\\crm\\CRM.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Documents\\crm\\CRM\\CRM\\obj\\",
+        "outputPath": "C:\\Users\\user\\Documents\\crm\\crm\\crm\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -35,3 +35,4 @@ C:\Users\user\Documents\crm\CRM\CRM\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swa
 C:\Users\user\Documents\crm\CRM\CRM\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\user\Documents\crm\CRM\CRM\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\user\Documents\crm\CRM\CRM\obj\Debug\net10.0\CRM.sourcelink.json
+C:\Users\user\Documents\crm\crm\crm\bin\Debug\net10.0\App_Data\leads.json
