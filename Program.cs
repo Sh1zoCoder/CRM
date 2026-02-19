@@ -1,4 +1,5 @@
 using CRM.Storage;
+using CRM;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,5 +22,7 @@ if (app.Environment.IsDevelopment())
 app.UseAuthorization();
 
 app.MapControllers();
+
+Console.Clear();
 
 app.Run();
