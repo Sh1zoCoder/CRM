@@ -1,7 +1,7 @@
 namespace CRM;
-public static class Log
+public static class Logs
 {
-    public static bool Enabled = true; 
+    public static bool Enabled = false; 
 
     public static void Info(string message)
     {

@@ -1,0 +1,15 @@
+2026-02-19 19:31:35.524 +03:00 [INF] Now listening on: http://localhost:5026
+2026-02-19 19:31:35.561 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-19 19:31:35.562 +03:00 [INF] Hosting environment: Development
+2026-02-19 19:31:35.563 +03:00 [INF] Content root path: C:\Users\user\Documents\crm\crm\crm
+2026-02-19 19:31:39.194 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5026/api/leads/test - null 0
+2026-02-19 19:31:39.235 +03:00 [INF] Executing endpoint 'JsonFileApi.Controllers.LeadsController.Create (CRM)'
+2026-02-19 19:31:39.247 +03:00 [INF] Route matched with {action = "Create", controller = "Leads"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller JsonFileApi.Controllers.LeadsController (CRM).
+2026-02-19 19:31:39.251 +03:00 [ERR] Exception: Произошла ошибка
+System.Exception: Произошла ошибка
+   at JsonFileApi.Controllers.LeadsController.Create() in C:\Users\user\Documents\crm\crm\crm\Controllers\LeadsController.cs:line 67
+2026-02-19 19:31:39.274 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2026-02-19 19:31:39.279 +03:00 [INF] Executed action JsonFileApi.Controllers.LeadsController.Create (CRM) in 26.648ms
+2026-02-19 19:31:39.280 +03:00 [INF] Executed endpoint 'JsonFileApi.Controllers.LeadsController.Create (CRM)'
+2026-02-19 19:31:39.283 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5026/api/leads/test - 200 0 null 90.3687ms
+2026-02-19 19:32:37.463 +03:00 [INF] Application is shutting down...

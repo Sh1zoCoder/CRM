@@ -3,7 +3,7 @@ using Microsoft.Extensions.Logging;
 using CRM.DTO;
 using CRM.Models;
 using CRM.Storage;
-using CRM;
+using Serilog;
 
 namespace JsonFileApi.Controllers;
 
@@ -24,7 +24,6 @@ public class LeadsController : ControllerBase
     public IActionResult GetAll([FromQuery] string? status, [FromQuery] string? query)
     {
         var items = _store.GetAll(status, query);
-        Log.Info($"Retrieved {items.Count} leads with status='{status}' and query='{query}'");
         return Ok(items); // C# -> JSON (сериализация ответа)
     }
 
@@ -35,12 +34,9 @@ public class LeadsController : ControllerBase
         var item = _store.GetById(id);
         if (item is null)
         {
-            Log.Error($"Lead with id={id} not found");
             return NotFound(new { message = $"Lead with id={id} not found" });
         }
 
-        Log.Info($"Lead with id={id} retrieved");
-        
         return Ok(item);
     }
 
@@ -60,9 +56,22 @@ public class LeadsController : ControllerBase
 
         var created = _store.Add(lead);
 
-        Log.Info($"Lead with id={created.Id} created");
-
         return CreatedAtAction(nameof(GetById), new { id = created.Id }, created);
+    }
+
+    [HttpPost("test")]
+    public IActionResult Create()
+    {
+        try
+        {
+            throw new Exception("Произошла ошибка");
+        }
+        catch (Exception exception)
+        {
+            _logger.LogError(exception, "Exception: {Message}", exception.Message);
+        }
+
+        return Ok();;
     }
 
     // PUT /api/leads/5
@@ -80,11 +89,9 @@ public class LeadsController : ControllerBase
 
         if (!ok)
         {
-            Log.Error($"Lead with id={id} not found");
             return NotFound(new { message = $"Lead with id={id} not found" });
         }
-        
-        Log.Info($"Lead with id={id} updated");
+
         return Ok(updated);
     }
 
@@ -95,11 +102,8 @@ public class LeadsController : ControllerBase
         var ok = _store.Delete(id);
         if (!ok)
         {
-            Log.Error($"Lead with id={id} not found");
             return NotFound(new { message = $"Lead with id={id} not found" });
         }
-
-        Log.Info($"Lead with id={id} deleted");
         return NoContent();
-    }  
-} 
+    }
+}

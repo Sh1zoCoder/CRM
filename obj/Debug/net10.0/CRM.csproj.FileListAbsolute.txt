@@ -36,3 +36,13 @@ C:\Users\user\Documents\crm\CRM\CRM\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swa
 C:\Users\user\Documents\crm\CRM\CRM\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\user\Documents\crm\CRM\CRM\obj\Debug\net10.0\CRM.sourcelink.json
 C:\Users\user\Documents\crm\crm\crm\bin\Debug\net10.0\App_Data\leads.json
+C:\Users\user\Documents\crm\crm\crm\bin\Debug\net10.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\user\Documents\crm\crm\crm\bin\Debug\net10.0\Serilog.dll
+C:\Users\user\Documents\crm\crm\crm\bin\Debug\net10.0\Serilog.AspNetCore.dll
+C:\Users\user\Documents\crm\crm\crm\bin\Debug\net10.0\Serilog.Extensions.Hosting.dll
+C:\Users\user\Documents\crm\crm\crm\bin\Debug\net10.0\Serilog.Extensions.Logging.dll
+C:\Users\user\Documents\crm\crm\crm\bin\Debug\net10.0\Serilog.Formatting.Compact.dll
+C:\Users\user\Documents\crm\crm\crm\bin\Debug\net10.0\Serilog.Settings.Configuration.dll
+C:\Users\user\Documents\crm\crm\crm\bin\Debug\net10.0\Serilog.Sinks.Console.dll
+C:\Users\user\Documents\crm\crm\crm\bin\Debug\net10.0\Serilog.Sinks.Debug.dll
+C:\Users\user\Documents\crm\crm\crm\bin\Debug\net10.0\Serilog.Sinks.File.dll

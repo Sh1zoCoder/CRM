@@ -1,12 +1,20 @@
 using CRM.Storage;
-using CRM;
+using Serilog;
+
+Log.Logger = new LoggerConfiguration()
+.WriteTo.Console()
+.WriteTo.File("logs/app.log", rollingInterval: RollingInterval.Day)
+.CreateLogger();
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Host.UseSerilog();
 
 // Add services to the container.
 
 builder.Services.AddControllers();
 builder.Services.AddSingleton<JsonFileLeadStore>();
+
 // Добавляем Swagger
 builder.Services.AddSwaggerGen();
 
