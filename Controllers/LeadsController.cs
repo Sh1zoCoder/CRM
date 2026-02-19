@@ -35,7 +35,7 @@ public class LeadsController : ControllerBase
         var item = _store.GetById(id);
         if (item is null)
         {
-            Log.Info($"Lead with id={id} not found");
+            Log.Error($"Lead with id={id} not found");
             return NotFound(new { message = $"Lead with id={id} not found" });
         }
 
@@ -80,7 +80,7 @@ public class LeadsController : ControllerBase
 
         if (!ok)
         {
-            Log.Info($"Lead with id={id} not found");
+            Log.Error($"Lead with id={id} not found");
             return NotFound(new { message = $"Lead with id={id} not found" });
         }
         
@@ -95,7 +95,7 @@ public class LeadsController : ControllerBase
         var ok = _store.Delete(id);
         if (!ok)
         {
-            Log.Info($"Lead with id={id} not found");
+            Log.Error($"Lead with id={id} not found");
             return NotFound(new { message = $"Lead with id={id} not found" });
         }
 
