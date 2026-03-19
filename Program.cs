@@ -1,5 +1,7 @@
 using CRM.Storage;
 using Serilog;
+using Microsoft.EntityFrameworkCore;
+using CRM.Data;
 
 Log.Logger = new LoggerConfiguration()
 .WriteTo.Console()
@@ -17,6 +19,8 @@ builder.Services.AddSingleton<JsonFileLeadStore>();
 
 // Добавляем Swagger
 builder.Services.AddSwaggerGen();
+builder.Services.AddDbContext<AppDbContext>(options =>
+options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 var app = builder.Build();
 

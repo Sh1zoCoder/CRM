@@ -4,19 +4,26 @@ using CRM.DTO;
 using CRM.Models;
 using CRM.Storage;
 using Serilog;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using CRM.Data;
+using CRM.Models;
 
 namespace JsonFileApi.Controllers;
+
 
 [ApiController]
 [Route("api/leads")]
 public class LeadsController : ControllerBase
 {
     private readonly JsonFileLeadStore _store;
+    private readonly AppDbContext _context;
     private readonly ILogger<LeadsController> _logger;
-    public LeadsController(JsonFileLeadStore store, ILogger<LeadsController> logger)
+    public LeadsController(JsonFileLeadStore store, ILogger<LeadsController> logger, AppDbContext context)
     {
         _store = store;
         _logger = logger;
+        _context = context;
     }
 
     // GET /api/leads?status=New&query=ivan
@@ -42,7 +49,7 @@ public class LeadsController : ControllerBase
 
     // POST /api/leads
     [HttpPost]
-    public IActionResult Create([FromBody] CreateLeadRequest request)
+    public async Task<IActionResult> Create([FromBody] CreateLeadRequest request)
     {
         // JSON -> C# (десериализация тела запроса)
         Lead lead = new Lead
@@ -55,6 +62,8 @@ public class LeadsController : ControllerBase
         };
 
         var created = _store.Add(lead);
+        _context.Leads.Add(lead);
+        await _context.SaveChangesAsync();
 
         return CreatedAtAction(nameof(GetById), new { id = created.Id }, created);
     }
