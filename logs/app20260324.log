@@ -1,0 +1,742 @@
+2026-03-24 19:29:10.154 +03:00 [INF] Now listening on: http://localhost:5026
+2026-03-24 19:29:10.253 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-24 19:29:10.254 +03:00 [INF] Hosting environment: Development
+2026-03-24 19:29:10.255 +03:00 [INF] Content root path: C:\Users\valed\Documents\CRM
+2026-03-24 19:29:45.779 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5026/api/leads/ - null null
+2026-03-24 19:29:45.840 +03:00 [INF] Executing endpoint 'JsonFileApi.Controllers.LeadsController.GetAll (CRM)'
+2026-03-24 19:29:45.864 +03:00 [INF] Route matched with {action = "GetAll", controller = "Leads"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(System.String, System.String) on controller JsonFileApi.Controllers.LeadsController (CRM).
+2026-03-24 19:29:47.439 +03:00 [INF] Executed DbCommand (38ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT l."Id", l."CreatedAtUtc", l."Email", l."Name", l."Phone", l."Source", l."Status", l."UpdatedAtUtc"
+FROM "Leads" AS l
+2026-03-24 19:29:47.574 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CRM.Models.Lead, CRM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-24 19:29:47.624 +03:00 [INF] Executed action JsonFileApi.Controllers.LeadsController.GetAll (CRM) in 1753.52ms
+2026-03-24 19:29:47.627 +03:00 [INF] Executed endpoint 'JsonFileApi.Controllers.LeadsController.GetAll (CRM)'
+2026-03-24 19:29:47.640 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5026/api/leads/ - 200 null application/json; charset=utf-8 1864.8193ms
+2026-03-24 19:30:15.135 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5026/api/leads/ - null null
+2026-03-24 19:30:15.139 +03:00 [INF] Executing endpoint 'JsonFileApi.Controllers.LeadsController.GetAll (CRM)'
+2026-03-24 19:30:15.140 +03:00 [INF] Route matched with {action = "GetAll", controller = "Leads"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(System.String, System.String) on controller JsonFileApi.Controllers.LeadsController (CRM).
+2026-03-24 19:30:15.169 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT l."Id", l."CreatedAtUtc", l."Email", l."Name", l."Phone", l."Source", l."Status", l."UpdatedAtUtc"
+FROM "Leads" AS l
+2026-03-24 19:30:15.172 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CRM.Models.Lead, CRM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-24 19:30:15.174 +03:00 [INF] Executed action JsonFileApi.Controllers.LeadsController.GetAll (CRM) in 31.4922ms
+2026-03-24 19:30:15.176 +03:00 [INF] Executed endpoint 'JsonFileApi.Controllers.LeadsController.GetAll (CRM)'
+2026-03-24 19:30:15.177 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5026/api/leads/ - 200 null application/json; charset=utf-8 43.1398ms
+2026-03-24 19:30:26.454 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5026/api/leads/Bob - null null
+2026-03-24 19:30:26.459 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5026/api/leads/Bob - 404 0 null 4.6996ms
+2026-03-24 19:30:26.465 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5026/api/leads/Bob, Response status code: 404
+2026-03-24 19:30:31.340 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5026/api/leads/ - null null
+2026-03-24 19:30:31.343 +03:00 [INF] Executing endpoint 'JsonFileApi.Controllers.LeadsController.GetAll (CRM)'
+2026-03-24 19:30:31.344 +03:00 [INF] Route matched with {action = "GetAll", controller = "Leads"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(System.String, System.String) on controller JsonFileApi.Controllers.LeadsController (CRM).
+2026-03-24 19:30:31.441 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT l."Id", l."CreatedAtUtc", l."Email", l."Name", l."Phone", l."Source", l."Status", l."UpdatedAtUtc"
+FROM "Leads" AS l
+2026-03-24 19:30:31.443 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CRM.Models.Lead, CRM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-24 19:30:31.445 +03:00 [INF] Executed action JsonFileApi.Controllers.LeadsController.GetAll (CRM) in 98.8563ms
+2026-03-24 19:30:31.446 +03:00 [INF] Executed endpoint 'JsonFileApi.Controllers.LeadsController.GetAll (CRM)'
+2026-03-24 19:30:31.447 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5026/api/leads/ - 200 null application/json; charset=utf-8 107.0972ms
+2026-03-24 19:33:44.108 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5026/api/leads/ - application/json 129
+2026-03-24 19:33:44.110 +03:00 [INF] Executing endpoint 'JsonFileApi.Controllers.LeadsController.Create (CRM)'
+2026-03-24 19:33:44.119 +03:00 [INF] Route matched with {action = "Create", controller = "Leads"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CRM.DTO.CreateLeadRequest) on controller JsonFileApi.Controllers.LeadsController (CRM).
+2026-03-24 19:33:44.320 +03:00 [ERR] Failed executing DbCommand (27ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime), @p2='?', @p3='?', @p4='?', @p5='?', @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Leads" ("Id", "CreatedAtUtc", "Email", "Name", "Phone", "Source", "Status", "UpdatedAtUtc")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2026-03-24 19:33:44.353 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'CRM.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "PK_Leads"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "PK_Leads"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Leads
+    ConstraintName: PK_Leads
+    File: nbtinsert.c
+    Line: 664
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "PK_Leads"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "PK_Leads"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Leads
+    ConstraintName: PK_Leads
+    File: nbtinsert.c
+    Line: 664
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-03-24 19:33:44.372 +03:00 [INF] Executed action JsonFileApi.Controllers.LeadsController.Create (CRM) in 252.1251ms
+2026-03-24 19:33:44.376 +03:00 [INF] Executed endpoint 'JsonFileApi.Controllers.LeadsController.Create (CRM)'
+2026-03-24 19:33:44.380 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "PK_Leads"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "PK_Leads"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Leads
+    ConstraintName: PK_Leads
+    File: nbtinsert.c
+    Line: 664
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at JsonFileApi.Controllers.LeadsController.Create(CreateLeadRequest request) in C:\Users\valed\Documents\CRM\Controllers\LeadsController.cs:line 86
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-03-24 19:33:44.421 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5026/api/leads/ - 500 null text/plain; charset=utf-8 312.8112ms
+2026-03-24 19:33:58.637 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5026/api/leads/ - application/json 109
+2026-03-24 19:33:58.639 +03:00 [INF] Executing endpoint 'JsonFileApi.Controllers.LeadsController.Create (CRM)'
+2026-03-24 19:33:58.640 +03:00 [INF] Route matched with {action = "Create", controller = "Leads"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CRM.DTO.CreateLeadRequest) on controller JsonFileApi.Controllers.LeadsController (CRM).
+2026-03-24 19:33:58.665 +03:00 [INF] Executed DbCommand (15ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime), @p2='?', @p3='?', @p4='?', @p5='?', @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Leads" ("Id", "CreatedAtUtc", "Email", "Name", "Phone", "Source", "Status", "UpdatedAtUtc")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2026-03-24 19:33:58.683 +03:00 [INF] Executing CreatedAtActionResult, writing value of type 'CRM.Models.Lead'.
+2026-03-24 19:33:58.701 +03:00 [INF] Executed action JsonFileApi.Controllers.LeadsController.Create (CRM) in 58.873ms
+2026-03-24 19:33:58.702 +03:00 [INF] Executed endpoint 'JsonFileApi.Controllers.LeadsController.Create (CRM)'
+2026-03-24 19:33:58.703 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5026/api/leads/ - 201 null application/json; charset=utf-8 66.201ms
+2026-03-24 19:34:19.516 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5026/api/leads/ - null null
+2026-03-24 19:34:19.518 +03:00 [INF] Executing endpoint 'JsonFileApi.Controllers.LeadsController.GetAll (CRM)'
+2026-03-24 19:34:19.519 +03:00 [INF] Route matched with {action = "GetAll", controller = "Leads"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(System.String, System.String) on controller JsonFileApi.Controllers.LeadsController (CRM).
+2026-03-24 19:34:19.522 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT l."Id", l."CreatedAtUtc", l."Email", l."Name", l."Phone", l."Source", l."Status", l."UpdatedAtUtc"
+FROM "Leads" AS l
+2026-03-24 19:34:19.525 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CRM.Models.Lead, CRM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-24 19:34:19.526 +03:00 [INF] Executed action JsonFileApi.Controllers.LeadsController.GetAll (CRM) in 6.1569ms
+2026-03-24 19:34:19.527 +03:00 [INF] Executed endpoint 'JsonFileApi.Controllers.LeadsController.GetAll (CRM)'
+2026-03-24 19:34:19.528 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5026/api/leads/ - 200 null application/json; charset=utf-8 12.7196ms
+2026-03-24 19:34:39.824 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5026/api/leads/ - null null
+2026-03-24 19:34:39.827 +03:00 [INF] Executing endpoint 'JsonFileApi.Controllers.LeadsController.GetAll (CRM)'
+2026-03-24 19:34:39.828 +03:00 [INF] Route matched with {action = "GetAll", controller = "Leads"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(System.String, System.String) on controller JsonFileApi.Controllers.LeadsController (CRM).
+2026-03-24 19:34:39.832 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT l."Id", l."CreatedAtUtc", l."Email", l."Name", l."Phone", l."Source", l."Status", l."UpdatedAtUtc"
+FROM "Leads" AS l
+2026-03-24 19:34:39.834 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CRM.Models.Lead, CRM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-24 19:34:39.836 +03:00 [INF] Executed action JsonFileApi.Controllers.LeadsController.GetAll (CRM) in 6.2568ms
+2026-03-24 19:34:39.837 +03:00 [INF] Executed endpoint 'JsonFileApi.Controllers.LeadsController.GetAll (CRM)'
+2026-03-24 19:34:39.839 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5026/api/leads/ - 200 null application/json; charset=utf-8 14.7147ms
+2026-03-24 19:34:47.882 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5026/api/leads/2 - null null
+2026-03-24 19:34:47.885 +03:00 [INF] Executing endpoint 'JsonFileApi.Controllers.LeadsController.GetById (CRM)'
+2026-03-24 19:34:47.888 +03:00 [INF] Route matched with {action = "GetById", controller = "Leads"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetById(Int32) on controller JsonFileApi.Controllers.LeadsController (CRM).
+2026-03-24 19:34:47.891 +03:00 [INF] Executing OkObjectResult, writing value of type 'CRM.Models.Lead'.
+2026-03-24 19:34:47.893 +03:00 [INF] Executed action JsonFileApi.Controllers.LeadsController.GetById (CRM) in 3.0504ms
+2026-03-24 19:34:47.894 +03:00 [INF] Executed endpoint 'JsonFileApi.Controllers.LeadsController.GetById (CRM)'
+2026-03-24 19:34:47.895 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5026/api/leads/2 - 200 null application/json; charset=utf-8 12.8802ms
+2026-03-24 19:34:52.537 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5026/api/leads/1 - null null
+2026-03-24 19:34:52.540 +03:00 [INF] Executing endpoint 'JsonFileApi.Controllers.LeadsController.GetById (CRM)'
+2026-03-24 19:34:52.541 +03:00 [INF] Route matched with {action = "GetById", controller = "Leads"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetById(Int32) on controller JsonFileApi.Controllers.LeadsController (CRM).
+2026-03-24 19:34:52.543 +03:00 [INF] Executing OkObjectResult, writing value of type 'CRM.Models.Lead'.
+2026-03-24 19:34:52.545 +03:00 [INF] Executed action JsonFileApi.Controllers.LeadsController.GetById (CRM) in 2.0955ms
+2026-03-24 19:34:52.547 +03:00 [INF] Executed endpoint 'JsonFileApi.Controllers.LeadsController.GetById (CRM)'
+2026-03-24 19:34:52.548 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5026/api/leads/1 - 200 null application/json; charset=utf-8 10.3212ms
+2026-03-24 19:34:59.043 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5026/api/leads/3 - null null
+2026-03-24 19:34:59.047 +03:00 [INF] Executing endpoint 'JsonFileApi.Controllers.LeadsController.GetById (CRM)'
+2026-03-24 19:34:59.048 +03:00 [INF] Route matched with {action = "GetById", controller = "Leads"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetById(Int32) on controller JsonFileApi.Controllers.LeadsController (CRM).
+2026-03-24 19:34:59.051 +03:00 [INF] Executing NotFoundObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-24 19:34:59.059 +03:00 [INF] Executed action JsonFileApi.Controllers.LeadsController.GetById (CRM) in 9.1383ms
+2026-03-24 19:34:59.061 +03:00 [INF] Executed endpoint 'JsonFileApi.Controllers.LeadsController.GetById (CRM)'
+2026-03-24 19:34:59.063 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5026/api/leads/3 - 404 null application/json; charset=utf-8 19.5629ms
+2026-03-24 22:12:02.460 +03:00 [INF] Application is shutting down...
+2026-03-24 22:12:16.141 +03:00 [INF] Now listening on: http://localhost:5026
+2026-03-24 22:12:16.205 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-24 22:12:16.206 +03:00 [INF] Hosting environment: Development
+2026-03-24 22:12:16.208 +03:00 [INF] Content root path: C:\Users\valed\Documents\CRM
+2026-03-24 22:12:16.896 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5026/api/leads/3 - null null
+2026-03-24 22:12:16.960 +03:00 [INF] Executing endpoint 'JsonFileApi.Controllers.LeadsController.GetById (CRM)'
+2026-03-24 22:12:16.979 +03:00 [INF] Route matched with {action = "GetById", controller = "Leads"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetById(Int32) on controller JsonFileApi.Controllers.LeadsController (CRM).
+2026-03-24 22:12:18.192 +03:00 [INF] Executed DbCommand (51ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l."Id", l."CreatedAtUtc", l."Email", l."Name", l."Phone", l."Source", l."Status", l."UpdatedAtUtc"
+FROM "Leads" AS l
+WHERE l."Id" = @id
+LIMIT 1
+2026-03-24 22:12:18.213 +03:00 [INF] Executing NotFoundObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-24 22:12:18.242 +03:00 [INF] Executed action JsonFileApi.Controllers.LeadsController.GetById (CRM) in 1258.278ms
+2026-03-24 22:12:18.245 +03:00 [INF] Executed endpoint 'JsonFileApi.Controllers.LeadsController.GetById (CRM)'
+2026-03-24 22:12:18.256 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5026/api/leads/3 - 404 null application/json; charset=utf-8 1362.8808ms
+2026-03-24 22:12:23.634 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5026/api/leads/2 - null null
+2026-03-24 22:12:23.639 +03:00 [INF] Executing endpoint 'JsonFileApi.Controllers.LeadsController.GetById (CRM)'
+2026-03-24 22:12:23.641 +03:00 [INF] Route matched with {action = "GetById", controller = "Leads"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetById(Int32) on controller JsonFileApi.Controllers.LeadsController (CRM).
+2026-03-24 22:12:23.680 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l."Id", l."CreatedAtUtc", l."Email", l."Name", l."Phone", l."Source", l."Status", l."UpdatedAtUtc"
+FROM "Leads" AS l
+WHERE l."Id" = @id
+LIMIT 1
+2026-03-24 22:12:23.755 +03:00 [INF] Executing OkObjectResult, writing value of type 'CRM.Models.Lead'.
+2026-03-24 22:12:23.781 +03:00 [INF] Executed action JsonFileApi.Controllers.LeadsController.GetById (CRM) in 136.892ms
+2026-03-24 22:12:23.783 +03:00 [INF] Executed endpoint 'JsonFileApi.Controllers.LeadsController.GetById (CRM)'
+2026-03-24 22:12:23.785 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5026/api/leads/2 - 200 null application/json; charset=utf-8 152.0965ms
+2026-03-24 22:12:43.922 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5026/api/leads/2 - null null
+2026-03-24 22:12:43.927 +03:00 [INF] Executing endpoint 'JsonFileApi.Controllers.LeadsController.GetById (CRM)'
+2026-03-24 22:12:43.928 +03:00 [INF] Route matched with {action = "GetById", controller = "Leads"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetById(Int32) on controller JsonFileApi.Controllers.LeadsController (CRM).
+2026-03-24 22:12:44.011 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l."Id", l."CreatedAtUtc", l."Email", l."Name", l."Phone", l."Source", l."Status", l."UpdatedAtUtc"
+FROM "Leads" AS l
+WHERE l."Id" = @id
+LIMIT 1
+2026-03-24 22:12:44.015 +03:00 [INF] Executing OkObjectResult, writing value of type 'CRM.Models.Lead'.
+2026-03-24 22:12:44.018 +03:00 [INF] Executed action JsonFileApi.Controllers.LeadsController.GetById (CRM) in 87.2779ms
+2026-03-24 22:12:44.020 +03:00 [INF] Executed endpoint 'JsonFileApi.Controllers.LeadsController.GetById (CRM)'
+2026-03-24 22:12:44.022 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5026/api/leads/2 - 200 null application/json; charset=utf-8 99.4732ms
+2026-03-24 22:15:49.803 +03:00 [INF] Application is shutting down...
+2026-03-24 22:15:56.275 +03:00 [INF] Now listening on: http://localhost:5026
+2026-03-24 22:15:56.334 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-24 22:15:56.336 +03:00 [INF] Hosting environment: Development
+2026-03-24 22:15:56.337 +03:00 [INF] Content root path: C:\Users\valed\Documents\CRM
+2026-03-24 22:16:10.818 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5026/api/leads/ - application/json 110
+2026-03-24 22:16:10.887 +03:00 [INF] Executing endpoint 'JsonFileApi.Controllers.LeadsController.Create (CRM)'
+2026-03-24 22:16:10.933 +03:00 [INF] Route matched with {action = "Create", controller = "Leads"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CRM.DTO.CreateLeadRequest) on controller JsonFileApi.Controllers.LeadsController (CRM).
+2026-03-24 22:16:12.185 +03:00 [ERR] Failed executing DbCommand (110ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?', @p2='?', @p3='?', @p4='?', @p5='?' (DbType = Int32), @p6='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Leads" ("CreatedAtUtc", "Email", "Name", "Phone", "Source", "Status", "UpdatedAtUtc")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6)
+RETURNING "Id";
+2026-03-24 22:16:12.217 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'CRM.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "PK_Leads"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "PK_Leads"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Leads
+    ConstraintName: PK_Leads
+    File: nbtinsert.c
+    Line: 664
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "PK_Leads"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "PK_Leads"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Leads
+    ConstraintName: PK_Leads
+    File: nbtinsert.c
+    Line: 664
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-03-24 22:16:12.242 +03:00 [INF] Executed action JsonFileApi.Controllers.LeadsController.Create (CRM) in 1303.1298ms
+2026-03-24 22:16:12.245 +03:00 [INF] Executed endpoint 'JsonFileApi.Controllers.LeadsController.Create (CRM)'
+2026-03-24 22:16:12.249 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "PK_Leads"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "PK_Leads"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Leads
+    ConstraintName: PK_Leads
+    File: nbtinsert.c
+    Line: 664
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at JsonFileApi.Controllers.LeadsController.Create(CreateLeadRequest request) in C:\Users\valed\Documents\CRM\Controllers\LeadsController.cs:line 86
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-03-24 22:16:12.302 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5026/api/leads/ - 500 null text/plain; charset=utf-8 1486.5576ms
+2026-03-24 22:16:19.316 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5026/api/leads/ - application/json 110
+2026-03-24 22:16:19.320 +03:00 [INF] Executing endpoint 'JsonFileApi.Controllers.LeadsController.Create (CRM)'
+2026-03-24 22:16:19.321 +03:00 [INF] Route matched with {action = "Create", controller = "Leads"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CRM.DTO.CreateLeadRequest) on controller JsonFileApi.Controllers.LeadsController (CRM).
+2026-03-24 22:16:19.409 +03:00 [ERR] Failed executing DbCommand (5ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?', @p2='?', @p3='?', @p4='?', @p5='?' (DbType = Int32), @p6='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Leads" ("CreatedAtUtc", "Email", "Name", "Phone", "Source", "Status", "UpdatedAtUtc")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6)
+RETURNING "Id";
+2026-03-24 22:16:19.415 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'CRM.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "PK_Leads"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "PK_Leads"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Leads
+    ConstraintName: PK_Leads
+    File: nbtinsert.c
+    Line: 664
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "PK_Leads"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "PK_Leads"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Leads
+    ConstraintName: PK_Leads
+    File: nbtinsert.c
+    Line: 664
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-03-24 22:16:19.432 +03:00 [INF] Executed action JsonFileApi.Controllers.LeadsController.Create (CRM) in 108.2945ms
+2026-03-24 22:16:19.434 +03:00 [INF] Executed endpoint 'JsonFileApi.Controllers.LeadsController.Create (CRM)'
+2026-03-24 22:16:19.436 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "PK_Leads"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "PK_Leads"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Leads
+    ConstraintName: PK_Leads
+    File: nbtinsert.c
+    Line: 664
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at JsonFileApi.Controllers.LeadsController.Create(CreateLeadRequest request) in C:\Users\valed\Documents\CRM\Controllers\LeadsController.cs:line 86
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-03-24 22:16:19.460 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5026/api/leads/ - 500 null text/plain; charset=utf-8 144.1693ms
+2026-03-24 22:16:44.204 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5026/api/leads/ - application/json 110
+2026-03-24 22:16:44.210 +03:00 [INF] Executing endpoint 'JsonFileApi.Controllers.LeadsController.Create (CRM)'
+2026-03-24 22:16:44.212 +03:00 [INF] Route matched with {action = "Create", controller = "Leads"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CRM.DTO.CreateLeadRequest) on controller JsonFileApi.Controllers.LeadsController (CRM).
+2026-03-24 22:16:44.266 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?', @p2='?', @p3='?', @p4='?', @p5='?' (DbType = Int32), @p6='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Leads" ("CreatedAtUtc", "Email", "Name", "Phone", "Source", "Status", "UpdatedAtUtc")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6)
+RETURNING "Id";
+2026-03-24 22:16:44.316 +03:00 [INF] Executing CreatedAtActionResult, writing value of type 'CRM.Models.Lead'.
+2026-03-24 22:16:44.359 +03:00 [INF] Executed action JsonFileApi.Controllers.LeadsController.Create (CRM) in 144.6547ms
+2026-03-24 22:16:44.362 +03:00 [INF] Executed endpoint 'JsonFileApi.Controllers.LeadsController.Create (CRM)'
+2026-03-24 22:16:44.363 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5026/api/leads/ - 201 null application/json; charset=utf-8 158.593ms
+2026-03-24 22:16:59.824 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5026/api/leads/2 - null null
+2026-03-24 22:16:59.835 +03:00 [INF] Executing endpoint 'JsonFileApi.Controllers.LeadsController.GetById (CRM)'
+2026-03-24 22:16:59.842 +03:00 [INF] Route matched with {action = "GetById", controller = "Leads"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetById(Int32) on controller JsonFileApi.Controllers.LeadsController (CRM).
+2026-03-24 22:17:00.127 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l."Id", l."CreatedAtUtc", l."Email", l."Name", l."Phone", l."Source", l."Status", l."UpdatedAtUtc"
+FROM "Leads" AS l
+WHERE l."Id" = @id
+LIMIT 1
+2026-03-24 22:17:00.139 +03:00 [INF] Executing OkObjectResult, writing value of type 'CRM.Models.Lead'.
+2026-03-24 22:17:00.142 +03:00 [INF] Executed action JsonFileApi.Controllers.LeadsController.GetById (CRM) in 297.0811ms
+2026-03-24 22:17:00.144 +03:00 [INF] Executed endpoint 'JsonFileApi.Controllers.LeadsController.GetById (CRM)'
+2026-03-24 22:17:00.145 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5026/api/leads/2 - 200 null application/json; charset=utf-8 320.9812ms
+2026-03-24 22:17:05.816 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5026/api/leads/ - null null
+2026-03-24 22:17:05.820 +03:00 [INF] Executing endpoint 'JsonFileApi.Controllers.LeadsController.GetAll (CRM)'
+2026-03-24 22:17:05.826 +03:00 [INF] Route matched with {action = "GetAll", controller = "Leads"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(System.String, System.String) on controller JsonFileApi.Controllers.LeadsController (CRM).
+2026-03-24 22:17:05.850 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT l."Id", l."CreatedAtUtc", l."Email", l."Name", l."Phone", l."Source", l."Status", l."UpdatedAtUtc"
+FROM "Leads" AS l
+2026-03-24 22:17:05.854 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CRM.Models.Lead, CRM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-24 22:17:05.861 +03:00 [INF] Executed action JsonFileApi.Controllers.LeadsController.GetAll (CRM) in 32.179ms
+2026-03-24 22:17:05.863 +03:00 [INF] Executed endpoint 'JsonFileApi.Controllers.LeadsController.GetAll (CRM)'
+2026-03-24 22:17:05.865 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5026/api/leads/ - 200 null application/json; charset=utf-8 49.1425ms
+2026-03-24 22:17:11.688 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5026/api/leads/3 - null null
+2026-03-24 22:17:11.691 +03:00 [INF] Executing endpoint 'JsonFileApi.Controllers.LeadsController.GetById (CRM)'
+2026-03-24 22:17:11.693 +03:00 [INF] Route matched with {action = "GetById", controller = "Leads"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetById(Int32) on controller JsonFileApi.Controllers.LeadsController (CRM).
+2026-03-24 22:17:11.704 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l."Id", l."CreatedAtUtc", l."Email", l."Name", l."Phone", l."Source", l."Status", l."UpdatedAtUtc"
+FROM "Leads" AS l
+WHERE l."Id" = @id
+LIMIT 1
+2026-03-24 22:17:11.709 +03:00 [INF] Executing OkObjectResult, writing value of type 'CRM.Models.Lead'.
+2026-03-24 22:17:11.711 +03:00 [INF] Executed action JsonFileApi.Controllers.LeadsController.GetById (CRM) in 16.0471ms
+2026-03-24 22:17:11.713 +03:00 [INF] Executed endpoint 'JsonFileApi.Controllers.LeadsController.GetById (CRM)'
+2026-03-24 22:17:11.715 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5026/api/leads/3 - 200 null application/json; charset=utf-8 26.229ms
+2026-03-24 22:23:16.356 +03:00 [INF] Application is shutting down...
+2026-03-24 22:23:22.081 +03:00 [INF] Now listening on: http://localhost:5026
+2026-03-24 22:23:22.125 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-24 22:23:22.126 +03:00 [INF] Hosting environment: Development
+2026-03-24 22:23:22.127 +03:00 [INF] Content root path: C:\Users\valed\Documents\CRM
+2026-03-24 22:23:31.469 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5026/api/leads/ - null null
+2026-03-24 22:23:31.519 +03:00 [INF] Executing endpoint 'JsonFileApi.Controllers.LeadsController.GetAll (CRM)'
+2026-03-24 22:23:31.537 +03:00 [INF] Route matched with {action = "GetAll", controller = "Leads"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(System.String, System.String) on controller JsonFileApi.Controllers.LeadsController (CRM).
+2026-03-24 22:23:32.529 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT l."Id", l."CreatedAtUtc", l."Email", l."Name", l."Phone", l."Source", l."Status", l."UpdatedAtUtc"
+FROM "Leads" AS l
+2026-03-24 22:23:32.631 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CRM.Models.Lead, CRM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-24 22:23:32.680 +03:00 [INF] Executed action JsonFileApi.Controllers.LeadsController.GetAll (CRM) in 1135.4812ms
+2026-03-24 22:23:32.682 +03:00 [INF] Executed endpoint 'JsonFileApi.Controllers.LeadsController.GetAll (CRM)'
+2026-03-24 22:23:32.694 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5026/api/leads/ - 200 null application/json; charset=utf-8 1226.7332ms
+2026-03-24 22:24:18.197 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5026/api/leads/1 - application/json 118
+2026-03-24 22:24:18.202 +03:00 [INF] Executing endpoint 'JsonFileApi.Controllers.LeadsController.Update (CRM)'
+2026-03-24 22:24:18.209 +03:00 [INF] Route matched with {action = "Update", controller = "Leads"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Update(Int32, CRM.DTO.UpdateLeadRequest) on controller JsonFileApi.Controllers.LeadsController (CRM).
+2026-03-24 22:24:18.367 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l."Id", l."CreatedAtUtc", l."Email", l."Name", l."Phone", l."Source", l."Status", l."UpdatedAtUtc"
+FROM "Leads" AS l
+WHERE l."Id" = @id
+LIMIT 1
+2026-03-24 22:24:18.444 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@p2='?' (DbType = Int32), @p0='?', @p1='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Leads" SET "Name" = @p0, "Phone" = @p1
+WHERE "Id" = @p2;
+2026-03-24 22:24:18.452 +03:00 [INF] Executing OkObjectResult, writing value of type 'CRM.Models.Lead'.
+2026-03-24 22:24:18.455 +03:00 [INF] Executed action JsonFileApi.Controllers.LeadsController.Update (CRM) in 243.5771ms
+2026-03-24 22:24:18.458 +03:00 [INF] Executed endpoint 'JsonFileApi.Controllers.LeadsController.Update (CRM)'
+2026-03-24 22:24:18.460 +03:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5026/api/leads/1 - 200 null application/json; charset=utf-8 263.4351ms
+2026-03-24 22:24:23.661 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5026/api/leads/ - null null
+2026-03-24 22:24:23.666 +03:00 [INF] Executing endpoint 'JsonFileApi.Controllers.LeadsController.GetAll (CRM)'
+2026-03-24 22:24:23.667 +03:00 [INF] Route matched with {action = "GetAll", controller = "Leads"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(System.String, System.String) on controller JsonFileApi.Controllers.LeadsController (CRM).
+2026-03-24 22:24:23.742 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT l."Id", l."CreatedAtUtc", l."Email", l."Name", l."Phone", l."Source", l."Status", l."UpdatedAtUtc"
+FROM "Leads" AS l
+2026-03-24 22:24:23.745 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CRM.Models.Lead, CRM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-24 22:24:23.748 +03:00 [INF] Executed action JsonFileApi.Controllers.LeadsController.GetAll (CRM) in 78.1664ms
+2026-03-24 22:24:23.749 +03:00 [INF] Executed endpoint 'JsonFileApi.Controllers.LeadsController.GetAll (CRM)'
+2026-03-24 22:24:23.751 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5026/api/leads/ - 200 null application/json; charset=utf-8 89.7407ms
+2026-03-24 22:24:52.637 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5026/api/leads/1 - null null
+2026-03-24 22:24:52.640 +03:00 [INF] Executing endpoint 'JsonFileApi.Controllers.LeadsController.Delete (CRM)'
+2026-03-24 22:24:52.643 +03:00 [INF] Route matched with {action = "Delete", controller = "Leads"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Delete(Int32) on controller JsonFileApi.Controllers.LeadsController (CRM).
+2026-03-24 22:24:52.657 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l."Id", l."CreatedAtUtc", l."Email", l."Name", l."Phone", l."Source", l."Status", l."UpdatedAtUtc"
+FROM "Leads" AS l
+WHERE l."Id" = @id
+LIMIT 1
+2026-03-24 22:24:52.686 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Leads"
+WHERE "Id" = @p0;
+2026-03-24 22:24:52.696 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-03-24 22:24:52.697 +03:00 [INF] Executed action JsonFileApi.Controllers.LeadsController.Delete (CRM) in 52.2954ms
+2026-03-24 22:24:52.699 +03:00 [INF] Executed endpoint 'JsonFileApi.Controllers.LeadsController.Delete (CRM)'
+2026-03-24 22:24:52.700 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5026/api/leads/1 - 204 null null 63.4375ms
+2026-03-24 22:26:00.936 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5026/api/leads/ - null null
+2026-03-24 22:26:00.939 +03:00 [INF] Executing endpoint 'JsonFileApi.Controllers.LeadsController.GetAll (CRM)'
+2026-03-24 22:26:00.940 +03:00 [INF] Route matched with {action = "GetAll", controller = "Leads"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(System.String, System.String) on controller JsonFileApi.Controllers.LeadsController (CRM).
+2026-03-24 22:26:00.945 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT l."Id", l."CreatedAtUtc", l."Email", l."Name", l."Phone", l."Source", l."Status", l."UpdatedAtUtc"
+FROM "Leads" AS l
+2026-03-24 22:26:00.948 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CRM.Models.Lead, CRM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-24 22:26:00.950 +03:00 [INF] Executed action JsonFileApi.Controllers.LeadsController.GetAll (CRM) in 9.0025ms
+2026-03-24 22:26:00.952 +03:00 [INF] Executed endpoint 'JsonFileApi.Controllers.LeadsController.GetAll (CRM)'
+2026-03-24 22:26:00.954 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5026/api/leads/ - 200 null application/json; charset=utf-8 18.3216ms
+2026-03-24 22:26:14.326 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5026/api/leads/ - application/json 109
+2026-03-24 22:26:14.329 +03:00 [INF] Executing endpoint 'JsonFileApi.Controllers.LeadsController.Create (CRM)'
+2026-03-24 22:26:14.336 +03:00 [INF] Route matched with {action = "Create", controller = "Leads"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CRM.DTO.CreateLeadRequest) on controller JsonFileApi.Controllers.LeadsController (CRM).
+2026-03-24 22:26:14.418 +03:00 [INF] Executed DbCommand (18ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?', @p2='?', @p3='?', @p4='?', @p5='?' (DbType = Int32), @p6='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Leads" ("CreatedAtUtc", "Email", "Name", "Phone", "Source", "Status", "UpdatedAtUtc")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6)
+RETURNING "Id";
+2026-03-24 22:26:14.454 +03:00 [INF] Executing CreatedAtActionResult, writing value of type 'CRM.Models.Lead'.
+2026-03-24 22:26:14.476 +03:00 [INF] Executed action JsonFileApi.Controllers.LeadsController.Create (CRM) in 138.3489ms
+2026-03-24 22:26:14.479 +03:00 [INF] Executed endpoint 'JsonFileApi.Controllers.LeadsController.Create (CRM)'
+2026-03-24 22:26:14.483 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5026/api/leads/ - 201 null application/json; charset=utf-8 157.1801ms
+2026-03-24 22:26:35.472 +03:00 [INF] Application is shutting down...
+2026-03-24 22:27:17.056 +03:00 [INF] Now listening on: http://localhost:5026
+2026-03-24 22:27:17.114 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-24 22:27:17.115 +03:00 [INF] Hosting environment: Development
+2026-03-24 22:27:17.116 +03:00 [INF] Content root path: C:\Users\valed\Documents\CRM
+2026-03-24 22:27:20.262 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5026/api/leads/ - null null
+2026-03-24 22:27:20.301 +03:00 [INF] Executing endpoint 'JsonFileApi.Controllers.LeadsController.GetAll (CRM)'
+2026-03-24 22:27:20.313 +03:00 [INF] Route matched with {action = "GetAll", controller = "Leads"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(System.String, System.String) on controller JsonFileApi.Controllers.LeadsController (CRM).
+2026-03-24 22:27:21.336 +03:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT l."Id", l."CreatedAtUtc", l."Email", l."Name", l."Phone", l."Source", l."Status", l."UpdatedAtUtc"
+FROM "Leads" AS l
+2026-03-24 22:27:21.441 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CRM.Models.Lead, CRM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-24 22:27:21.481 +03:00 [INF] Executed action JsonFileApi.Controllers.LeadsController.GetAll (CRM) in 1161.8707ms
+2026-03-24 22:27:21.483 +03:00 [INF] Executed endpoint 'JsonFileApi.Controllers.LeadsController.GetAll (CRM)'
+2026-03-24 22:27:21.492 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5026/api/leads/ - 200 null application/json; charset=utf-8 1230.8882ms
+2026-03-24 22:27:38.096 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5026/api/leads/2 - null null
+2026-03-24 22:27:38.102 +03:00 [INF] Executing endpoint 'JsonFileApi.Controllers.LeadsController.Delete (CRM)'
+2026-03-24 22:27:38.108 +03:00 [INF] Route matched with {action = "Delete", controller = "Leads"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Delete(Int32) on controller JsonFileApi.Controllers.LeadsController (CRM).
+2026-03-24 22:27:38.254 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l."Id", l."CreatedAtUtc", l."Email", l."Name", l."Phone", l."Source", l."Status", l."UpdatedAtUtc"
+FROM "Leads" AS l
+WHERE l."Id" = @id
+LIMIT 1
+2026-03-24 22:27:38.347 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Leads"
+WHERE "Id" = @p0;
+2026-03-24 22:27:38.361 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-03-24 22:27:38.362 +03:00 [INF] Executed action JsonFileApi.Controllers.LeadsController.Delete (CRM) in 251.6893ms
+2026-03-24 22:27:38.365 +03:00 [INF] Executed endpoint 'JsonFileApi.Controllers.LeadsController.Delete (CRM)'
+2026-03-24 22:27:38.367 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5026/api/leads/2 - 204 null null 271.0728ms
+2026-03-24 22:27:41.318 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5026/api/leads/5 - null null
+2026-03-24 22:27:41.323 +03:00 [INF] Executing endpoint 'JsonFileApi.Controllers.LeadsController.Delete (CRM)'
+2026-03-24 22:27:41.324 +03:00 [INF] Route matched with {action = "Delete", controller = "Leads"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Delete(Int32) on controller JsonFileApi.Controllers.LeadsController (CRM).
+2026-03-24 22:27:41.405 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l."Id", l."CreatedAtUtc", l."Email", l."Name", l."Phone", l."Source", l."Status", l."UpdatedAtUtc"
+FROM "Leads" AS l
+WHERE l."Id" = @id
+LIMIT 1
+2026-03-24 22:27:41.412 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Leads"
+WHERE "Id" = @p0;
+2026-03-24 22:27:41.415 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-03-24 22:27:41.416 +03:00 [INF] Executed action JsonFileApi.Controllers.LeadsController.Delete (CRM) in 90.3426ms
+2026-03-24 22:27:41.417 +03:00 [INF] Executed endpoint 'JsonFileApi.Controllers.LeadsController.Delete (CRM)'
+2026-03-24 22:27:41.419 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5026/api/leads/5 - 204 null null 100.7043ms
+2026-03-24 22:27:43.734 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5026/api/leads/4 - null null
+2026-03-24 22:27:43.737 +03:00 [INF] Executing endpoint 'JsonFileApi.Controllers.LeadsController.Delete (CRM)'
+2026-03-24 22:27:43.739 +03:00 [INF] Route matched with {action = "Delete", controller = "Leads"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Delete(Int32) on controller JsonFileApi.Controllers.LeadsController (CRM).
+2026-03-24 22:27:43.746 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT l."Id", l."CreatedAtUtc", l."Email", l."Name", l."Phone", l."Source", l."Status", l."UpdatedAtUtc"
+FROM "Leads" AS l
+WHERE l."Id" = @id
+LIMIT 1
+2026-03-24 22:27:43.755 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "Leads"
+WHERE "Id" = @p0;
+2026-03-24 22:27:43.759 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-03-24 22:27:43.760 +03:00 [INF] Executed action JsonFileApi.Controllers.LeadsController.Delete (CRM) in 19.2073ms
+2026-03-24 22:27:43.762 +03:00 [INF] Executed endpoint 'JsonFileApi.Controllers.LeadsController.Delete (CRM)'
+2026-03-24 22:27:43.764 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5026/api/leads/4 - 204 null null 29.9646ms
+2026-03-24 22:27:47.091 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5026/api/leads/ - null null
+2026-03-24 22:27:47.095 +03:00 [INF] Executing endpoint 'JsonFileApi.Controllers.LeadsController.GetAll (CRM)'
+2026-03-24 22:27:47.096 +03:00 [INF] Route matched with {action = "GetAll", controller = "Leads"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(System.String, System.String) on controller JsonFileApi.Controllers.LeadsController (CRM).
+2026-03-24 22:27:47.103 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT l."Id", l."CreatedAtUtc", l."Email", l."Name", l."Phone", l."Source", l."Status", l."UpdatedAtUtc"
+FROM "Leads" AS l
+2026-03-24 22:27:47.107 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CRM.Models.Lead, CRM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-24 22:27:47.109 +03:00 [INF] Executed action JsonFileApi.Controllers.LeadsController.GetAll (CRM) in 10.4393ms
+2026-03-24 22:27:47.111 +03:00 [INF] Executed endpoint 'JsonFileApi.Controllers.LeadsController.GetAll (CRM)'
+2026-03-24 22:27:47.112 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5026/api/leads/ - 200 null application/json; charset=utf-8 20.8708ms
+2026-03-24 22:29:41.194 +03:00 [INF] Application is shutting down...
+2026-03-24 22:29:47.242 +03:00 [INF] Now listening on: http://localhost:5026
+2026-03-24 22:29:47.288 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-24 22:29:47.289 +03:00 [INF] Hosting environment: Development
+2026-03-24 22:29:47.290 +03:00 [INF] Content root path: C:\Users\valed\Documents\CRM
+2026-03-24 22:29:52.115 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5026/api/leads/ - null null
+2026-03-24 22:29:52.162 +03:00 [INF] Executing endpoint 'JsonFileApi.Controllers.LeadsController.GetAll (CRM)'
+2026-03-24 22:29:52.186 +03:00 [INF] Route matched with {action = "GetAll", controller = "Leads"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll(System.String, System.String) on controller JsonFileApi.Controllers.LeadsController (CRM).
+2026-03-24 22:29:53.358 +03:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT l."Id", l."CreatedAtUtc", l."Email", l."Name", l."Phone", l."Source", l."Status", l."UpdatedAtUtc"
+FROM "Leads" AS l
+2026-03-24 22:29:53.380 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CRM.Models.Lead, CRM, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-03-24 22:29:53.432 +03:00 [INF] Executed action JsonFileApi.Controllers.LeadsController.GetAll (CRM) in 1239.6974ms
+2026-03-24 22:29:53.434 +03:00 [INF] Executed endpoint 'JsonFileApi.Controllers.LeadsController.GetAll (CRM)'
+2026-03-24 22:29:53.444 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5026/api/leads/ - 200 null application/json; charset=utf-8 1330.8692ms
+2026-03-24 22:30:21.269 +03:00 [INF] Application is shutting down...

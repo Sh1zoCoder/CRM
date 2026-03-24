@@ -2,7 +2,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using CRM.DTO;
 using CRM.Models;
-using CRM.Storage;
 using Serilog;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -16,12 +15,10 @@ namespace JsonFileApi.Controllers;
 [Route("api/leads")]
 public class LeadsController : ControllerBase
 {
-    private readonly JsonFileLeadStore _store;
     private readonly AppDbContext _context;
     private readonly ILogger<LeadsController> _logger;
-    public LeadsController(JsonFileLeadStore store, ILogger<LeadsController> logger, AppDbContext context)
+    public LeadsController(ILogger<LeadsController> logger, AppDbContext context)
     {
-        _store = store;
         _logger = logger;
         _context = context;
     }
@@ -30,7 +27,27 @@ public class LeadsController : ControllerBase
     [HttpGet]
     public IActionResult GetAll([FromQuery] string? status, [FromQuery] string? query)
     {
-        var items = _store.GetAll(status, query);
+        IQueryable<Lead> itemsQuery = _context.Leads.AsQueryable();
+
+        if (!string.IsNullOrWhiteSpace(status) &&
+            Enum.TryParse<LeadStatus>(status, true, out var parsedStatus))
+        {
+            itemsQuery = itemsQuery.Where(lead => lead.Status == parsedStatus);
+        }
+
+        if (!string.IsNullOrWhiteSpace(query))
+        {
+            var normalizedQuery = query.Trim().ToLower();
+
+            itemsQuery = itemsQuery.Where(lead =>
+                lead.Name.ToLower().Contains(normalizedQuery) ||
+                lead.Phone.ToLower().Contains(normalizedQuery) ||
+                (lead.Email != null && lead.Email.ToLower().Contains(normalizedQuery)) ||
+                lead.Source.ToLower().Contains(normalizedQuery));
+        }
+
+        var items = itemsQuery.ToList();
+
         return Ok(items); // C# -> JSON (сериализация ответа)
     }
 
@@ -38,7 +55,8 @@ public class LeadsController : ControllerBase
     [HttpGet("{id:int}")]
     public IActionResult GetById([FromRoute] int id)
     {
-        var item = _store.GetById(id);
+        var item = _context.Leads.FirstOrDefault(x => x.Id == id);
+
         if (item is null)
         {
             return NotFound(new { message = $"Lead with id={id} not found" });
@@ -61,11 +79,10 @@ public class LeadsController : ControllerBase
             Status = LeadStatus.New
         };
 
-        var created = _store.Add(lead);
         _context.Leads.Add(lead);
         await _context.SaveChangesAsync();
 
-        return CreatedAtAction(nameof(GetById), new { id = created.Id }, created);
+        return CreatedAtAction(nameof(GetById), new { id = lead.Id }, lead);
     }
 
     [HttpPost("test")]
@@ -80,39 +97,45 @@ public class LeadsController : ControllerBase
             _logger.LogError(exception, "Exception: {Message}", exception.Message);
         }
 
-        return Ok();;
+        return Ok(); ;
     }
 
     // PUT /api/leads/5
     [HttpPut("{id:int}")]
     public IActionResult Update([FromRoute] int id, [FromBody] UpdateLeadRequest request)
     {
-        var ok = _store.Update(id, lead =>
-        {
-            lead.Name = request.Name.Trim();
-            lead.Phone = request.Phone.Trim();
-            lead.Email = string.IsNullOrWhiteSpace(request.Email) ? null : request.Email.Trim();
-            lead.Source = string.IsNullOrWhiteSpace(request.Source) ? "unknown" : request.Source.Trim();
-            lead.Status = request.Status;
-        }, out var updated);
+        var lead = _context.Leads.FirstOrDefault(x => x.Id == id)!;
 
-        if (!ok)
+        if (lead is null)
         {
             return NotFound(new { message = $"Lead with id={id} not found" });
         }
 
-        return Ok(updated);
+        lead.Name = request.Name.Trim();
+        lead.Phone = request.Phone.Trim();
+        lead.Email = string.IsNullOrWhiteSpace(request.Email) ? null : request.Email.Trim();
+        lead.Source = string.IsNullOrWhiteSpace(request.Source) ? "unknown" : request.Source.Trim();
+        lead.Status = request.Status;
+
+        _context.SaveChanges();
+
+        return Ok(lead);
     }
 
     // DELETE /api/leads/5
     [HttpDelete("{id:int}")]
     public IActionResult Delete([FromRoute] int id)
     {
-        var ok = _store.Delete(id);
-        if (!ok)
+        var lead = _context.Leads.FirstOrDefault(x => x.Id == id);
+
+        if (lead is null)
         {
             return NotFound(new { message = $"Lead with id={id} not found" });
         }
+
+        _context.Leads.Remove(lead);
+        _context.SaveChanges();
+
         return NoContent();
     }
 }

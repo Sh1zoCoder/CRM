@@ -1,4 +1,3 @@
-using CRM.Storage;
 using Serilog;
 using Microsoft.EntityFrameworkCore;
 using CRM.Data;
@@ -13,9 +12,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Host.UseSerilog();
 
 // Add services to the container.
-
 builder.Services.AddControllers();
-builder.Services.AddSingleton<JsonFileLeadStore>();
 
 // Добавляем Swagger
 builder.Services.AddSwaggerGen();
