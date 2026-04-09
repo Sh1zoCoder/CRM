@@ -8,8 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using CRM.Data;
 using CRM.Models;
 
-namespace JsonFileApi.Controllers;
-
+namespace FileApi.Controllers;
 
 [ApiController]
 [Route("api/leads")]
@@ -69,7 +68,7 @@ public class LeadsController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> Create([FromBody] CreateLeadRequest request)
     {
-        // JSON -> C# (десериализация тела запроса)
+        
         Lead lead = new Lead
         {
             Name = request.Name.Trim(),
